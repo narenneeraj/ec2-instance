@@ -4,10 +4,10 @@ agent any
   
     stage('test'){
       steps {
-      sh '''
+      sh ''
       terraform apply
       yes
-      '''
+      ''
       }
       }
     }
