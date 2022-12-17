@@ -5,8 +5,10 @@ agent any
     stage('test'){
       steps {
       sh '''
-      terraform init
-      terraform apply --auto-approve
+      whoami
+      aws configure
+      sudo terraform init
+      sudo terraform apply --auto-approve
       
       '''
       }
