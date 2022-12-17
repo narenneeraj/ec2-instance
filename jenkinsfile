@@ -11,6 +11,7 @@ agent any
     secretKeyVariable: 'AWS_SECRET_ACCESS_KEY'
 ]]) {
       sh '''
+      aws sts get-caller-identity
       sudo terraform init
       sudo terraform apply --auto-approve
       '''
