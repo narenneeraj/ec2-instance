@@ -12,8 +12,7 @@ agent any
 ]]) {
       sh '''
       aws sts get-caller-identity
-      sudo terraform init
-      sudo terraform apply --auto-approve
+      sudo terraform destroy
       '''
 }
       }
