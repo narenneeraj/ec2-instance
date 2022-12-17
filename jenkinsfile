@@ -5,8 +5,9 @@ agent any
     stage('test'){
       steps {
       sh '''
-      terraform apply
-      yes
+      terraform init
+      terraform apply --auto-approve
+      
       '''
       }
       }
