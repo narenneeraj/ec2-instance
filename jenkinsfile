@@ -11,8 +11,6 @@ agent any
     secretKeyVariable: 'AWS_SECRET_ACCESS_KEY'
 ]]) {
       sh '''
-      whoami
-      aws configure
       sudo terraform init
       sudo terraform apply --auto-approve
       '''
